@@ -2,7 +2,7 @@ package com.example.RestfulAPI;
 
 public class RestUser {
 
-    private String empID, empName, empDesignation;
+    private String empID, empName, empDesignation, empSalary;
 
 
     public void setEmpID(String empID) {
@@ -27,6 +27,14 @@ public class RestUser {
 
     public String getEmpDesignation(){
         return empDesignation;
+    }
+
+    public void setEmpSalary(String empSalary){
+        this.empSalary = empSalary;
+    }
+
+    public String getEmpSalary(){
+        return empSalary;
     }
 
 }
