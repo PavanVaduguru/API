@@ -3,8 +3,6 @@ package com.example.RestfulAPI;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.*;
-import java.text.ParseException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +23,7 @@ public class Controller {
         addValue.setEmpID(userDetails.getEmpID());
         addValue.setEmpName(userDetails.getEmpName());
         addValue.setEmpDesignation(userDetails.getEmpDesignation());
+        addValue.setEmpSalary(userDetails.getEmpSalary());
 
         allUsers.put(userDetails.getEmpID(), addValue);
         return "User Added";
